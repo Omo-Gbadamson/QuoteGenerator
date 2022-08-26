@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#quoteContent{
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    /* background-color: lightskyblue; */
+    line-height: 1.5;
+
+}
+.theQuote{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: italic;
+}
+.theQuote::before{
+    content: '"';
+    /* margin-left: -50px; */
+    position: relative;
+}
+.theQuote::after{
+    content: '"';
+    position: relative;
+}
+.quoter::before{
+    content: '--';
+}
+#loadmyQuote{
+    position: fixed;
+    font-size: 1rem;
+    width: 250px;
+    display: inline-block;
+    left: 50%;
+    margin-left: -6em;
+    bottom: 150px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    background-color: lightblue;
+    padding: 15px;
+    transition: .5;
+}
+
+/* body{
+    color: rgb(red, green, blue)
+} */
